@@ -1,8 +1,585 @@
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- */
+
+
+body , html{
+        font-family: 'Chakra Petch', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 300vh;
+    }
+
+
+    .topnav {
+    
+    width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #00092C;
+    }
+    
+    .button-54{
+      display: none;
+    }
+    .head{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+    }
+    .text-head h1{
+    display: none;
+    }
+
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .mobile-photo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mobile{
+        width: 70%;
+        align-self: center;
+        padding-top: 30px;
+        border: 10px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .h1-mobile{
+    display: flex;
+    text-align: center;
+    font-size: 36px;
+    padding-bottom:150px;
+    }
+    .responsive{
+      display: none;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about .aboutme{
+        text-align: center;
+        font-size: 5rem;
+        padding-bottom: 10px;
+        color: #00092C;
+
+    }
+
+    .about span{
+        font-size: 1.5rem; 
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .first{
+      display: none;
+    }
+    .projects{
+       padding-right: 20px;
+       padding-left: 20px;
+       display: flex;
+       flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .projects .projects-title{
+        text-align: center;
+        padding-top: 50px;
+        font-size: 5rem;
+        color: #00092C;
+        padding-top: 100px;
+    }
+    .projects .h3{
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+    }
+    .tindog{
+        display: flex;
+        flex-direction: column;
+        width: 100%;  
+    }
+
+    .tindog1{
+        width: 100%;
+        border: 5px solid #00092C;
+        justify-content: center;
+        border-radius: 5%;
+    }
+
+    .tindog2 , .tindog3{
+        display:none;
+    }
+ 
+    .airbnb{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+
+    }
+    .airbnb1{
+        height: 339.34px;
+        width: 100%;
+        object-fit: cover;
+        border: 5px solid #00092C;
+        justify-content: center;
+        border-radius: 5%;
+    }
+
+    .airbnb2{
+        display: none;
+    }
+
+    .section-form{
+        padding: 30px;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top:50px;
+        padding-bottom: 30px;
+        border: 5px solid #00092C;
+        border-radius: 5%;
+    }
+    legend{
+        color: #00092C;
+        font-size: 1.5rem;
+    }
+    
+    input{
+        width: 50%;
+        height: 20px;
+        align-self: flex-start;
+        margin-top: 5px;
+        background-color: white;
+        border: none;
+    }
+    textarea{
+        width: 100%;
+        height: 100px;
+        margin-top: 5px;
+        border: none;
+    }
+    #send{
+        width: 20%;
+        height: 30px;
+        align-self: center;
+        background-color: #00092C;
+        color: white;
+        border-radius: 10%;
+    }
+    
+    .footer{
+        font-family: 'Chakra Petch', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #00092C;
+        color: white;
+    }
+    
+    .footer-items{
+        font-family: 'Chakra Petch', sans-serif;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        list-style-type: none;
+        color: white;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    
+    @media only screen and (min-width: 769px) and (max-width: 1180px) {
+        
+        .topnav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .button-54 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Chakra Petch', sans-serif;
+            padding-left: 20px;
+            width: 150px;
+            height: 40px;
+            box-sizing: border-box;
+            font-size: 1.5rem;
+            color: #00092C;
+            overflow: hidden;
+            border-radius: 5%;
+            background-color: darkorange;
+
+        }
+        .mobile-photo{
+            padding-top: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .mobile{
+            width: 40%;
+            padding-bottom: 0;
+        }
+
+
+
+    
+        .h1-mobile{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 3rem;
+            padding-top: 40px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border: 10px solid black;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .about .aboutme{
+            font-size: 6rem;
+            padding-top: 500px;
+        }
+
+        .about span{
+            font-size: 2rem;
+            padding-bottom: 500px;
+            padding-top: 40px;
+        }
+
+     .projects .projects-title{
+            font-size: 10rem;
+            padding-bottom: 100px;
+            padding-top: 300px;
+        }
+        .projects .h3{
+            font-size: 2rem;
+        }
+
+        .dog-img{
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            padding-bottom: 100px;
+        }
+
+        .tindog1 , .tindog3{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            border: 2px solid black;
+            border-radius: 5%;
+            object-fit: cover;
+            
+        }
+
+        .home-img{
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            padding-bottom: 100px;
+        }
+
+        .airbnb1 , .airbnb2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            border: 2px solid black;
+            border-radius: 5%;
+            object-fit: cover;
+
+        }
+
+       
+        
+
+        .contact-form{
+            font-size: 1.2rem;
+        }
+
+        input{
+            height: 50px;
+
+        }
+
+        #send{
+            font-size: 1.2rem;
+            width: 15%;
+            height: fit-content;
+        }
+
+        .footer{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .footer p{
+            font-size: 1.2rem;
+            padding-left: 15px;
+            line-height: 1.2rem;
+        }
+
+        .footer-items li{
+            margin-right: 30px;
+            
+        }
+
+    }
+
+    @media (min-width: 1181px) {
+            body {
+                font-family: 'Chakra Petch', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+                height: 100%;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        .topnav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+        .button-54 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: max-content;
+            height: max-content;
+            box-sizing: border-box;
+            font-size: 2rem;
+            color: #00092C;
+            overflow: hidden;
+            border-radius: 5%;
+            background-color: darkorange;
+            font-family: 'Chakra Petch', sans-serif;
+            border: none;
+
+        }
+
+        .mobile{
+            display: none;
+        }
+        .head{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+
+        .text-head h1{
+            display: flex;
+            flex-direction: row;
+            padding-left: 40px;
+            font-size: 4rem;
+        }
+
+        .responsive{
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            padding-top: 400px;
+            padding-bottom: 300px;
+            
+
+        }
+        .first{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 1.5rem;
+            padding-left: 90px;
+        }
+
+        .h1-mobile{
+            display: none;
+        }
+
+
+
+        section .about{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+
+        .about .aboutme{
+            align-self: flex-end;
+            font-size: 100px;
+            width: 50%;
+            text-align: right;
+            margin-bottom: 50px;
+            
+        
+        }
+        .about span{
+            align-self: flex-end;
+            padding-right: 150px;
+            width: 50%;
+            text-align: right;
+            margin-bottom: 300px;
+        }
+
+
+        .dog-img{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 50px;
+           
+            
+         }
+
+         .tindog1{
+            display: flex;
+            width: 25%;
+            height: fit-content;
+            border: none;
+            
+         }
+
+          .tindog2{
+            display: flex;
+            width: 25%;
+            height: max-content;
+            border-radius: 5%;
+            align-self: center;
+          }
+
+          .tindog3{
+            display: flex;
+            width: 25%;
+            height: fit-content;
+            border-radius: 5%;
+          }
+
+         .airbnb{
+            padding-top: 150px;
+         }
+        
+        .home-img{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+
+        .projects .projects-title{
+            padding-top: 300px;
+            padding-bottom: 150px;
+            font-size: 100px;
+        }
+
+    
+        .projects .h3{
+            font-size: 3rem;
+            
+        }
+
+        .airbnb1{
+            border: none;
+            width: 35%;
+
+        }
+
+        .airbnb2{
+            display: flex;
+            width: 35%;
+            height: 338.34px;
+            object-fit: cover;
+            border-radius: 5%;
+        }
+
+        .section-form{
+            padding-top: 150px;
+        }
+
+        .contact-form{
+            width: 50%;
+            
+            
+        }
+
+        label{
+            font-size: 1.2rem;
+        }
+        input{
+            height: 30px;
+            font-size: inherit;
+        }
+        textarea{
+            font-size: 1.2rem;
+
+        }
+        #send{
+            width: 100px;
+        
+        }
+    }
+
+    
+
+    
+    
+      
